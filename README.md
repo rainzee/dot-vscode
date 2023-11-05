@@ -8,6 +8,7 @@ Rainzee's VS Code settings, carefully curated for python development. A Minimali
 ![screenshot](./screenshots/2.png)
 ![screenshot](./screenshots/3.png)
 ![screenshot](./screenshots/4.png)
+![screenshot](./screenshots/5.png)
 
 ### 🎨 Theme
 
