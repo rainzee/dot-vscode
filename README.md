@@ -1,30 +1,35 @@
 # dot-vscode
 
-Rainzee's VS Code settings
+Rainzee's VS Code settings, carefully curated for python development. A Minimalist in Practice.
 
-## Extensions
+### Screenshots
 
-### Theme
+(./screenshots/1.png)
+(./screenshots/2.png)
+(./screenshots/3.png)
+(./screenshots/4.png)
 
-- ddiu8081.moegi-theme
-- file-icons.file-icons
+### 🎨 Theme
 
-### Plugins
+- Moegi Theme (ddiu8081.moegi-theme)
+- File Icons (file-icons.file-icons)
 
-- usernamehw.errorlens
-- gruntfuggly.todo-tree
+### 🔌 Plugins
+
+- eamodio.gitlens
 - adpyke.codesnap
 - antfu.file-nesting
+- usernamehw.errorlens
+- gruntfuggly.todo-tree
 - aykutsarac.jsoncrack-vscode
-- eamodio.gitlens
 
-### Python
+### 🐍 Python Development
 
-- charliermarsh.ruff
-- ms-python.vscode-pylance
-- ms-python.python
+- Python (ms-python.python)
+- Pylance (ms-python.vscode-pylance)
+- Ruff (charliermarsh.ruff)
 
-### Optional
+### 📦 Optional Enhancements
 
 - alefragnani.project-manager
 - jock.svg
