@@ -1,47 +1,113 @@
-{
-    // Window
-    // -- Setting
-    "window.commandCenter": true,
-    "window.menuBarVisibility": "compact",   
+// ____       _                         
+// |  _ \ __ _(_)_ __  _______  ___  ___ 
+// | |_) / _` | | '_ \|_  / _ \/ _ \/ __|
+// |  _ < (_| | | | | |/ /  __/  __/\__ \
+// |_| \_\__,_|_|_| |_/___\___|\___||___/
 
-    // Workbench
-    // -- Themes
-    "workbench.colorTheme": "Gerry Dark",
+{
+    // -------------------------------------
+    // Window Settings
+    // These settings control the UI elements of VSCode like the command center, menu bar visibility, etc.
+    // -------------------------------------
+
+    // General
+    "window.commandCenter": true,
+    "window.menuBarVisibility": "compact",
+
+
+    // -------------------------------------
+    // Workbench Settings
+    // These settings adjust the appearance and behavior of the overall workbench, including themes, startup editor, activity bar location, etc.
+    // -------------------------------------
+    
+    // Themes
     "workbench.iconTheme": "file-icons",
+    "workbench.colorTheme": "Gerry Dark",
+    
+    // Customization
     "workbench.colorCustomizations": {
         "editorCursor.foreground": "#00EE00",
         "editor.lineHighlightBackground": "#303030",
     },
-    // -- Setting
+    
+    // General
     "workbench.startupEditor": "none",
+    "workbench.editor.showTabs": "single",
+    "workbench.activityBar.location": "top",
     "workbench.list.smoothScrolling": true,
     "workbench.layoutControl.enabled": false,
-    "workbench.activityBar.location": "top",
-    "workbench.editor.showTabs": "single",
 
-    // Editor
-    // -- Font
+
+    // -------------------------------------
+    // Editor Settings
+    // These settings control the behavior and appearance of the editor window where you write your code.
+    // -------------------------------------
+
+    // Font
+    "editor.fontSize": 16,
     "editor.fontLigatures": true,
     "editor.fontFamily": "Cascadia Code, Segoe UI, Microsoft YaHei",
-    "editor.fontSize": 16,
-    // -- Setting
+
+    // General
+    "editor.cursorBlinking": "smooth",
     "editor.smoothScrolling": true,
     "editor.minimap.enabled": false,
-    "editor.cursorBlinking": "smooth",
-    "editor.cursorSmoothCaretAnimation": "on",
     "editor.inlayHints.enabled": "onUnlessPressed",
+    "editor.cursorSmoothCaretAnimation": "on",
 
-    // Terminal
-    // -- Setting
-    "terminal.integrated.gpuAcceleration": "on",
-    "terminal.integrated.smoothScrolling": true,
+    // Language specific settings for Python
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+
+
+    // -------------------------------------
+    // Terminal Settings
+    // These settings are specific to the integrated terminal in VSCode.
+    // -------------------------------------
+
+    // General
     "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.smoothScrolling": true,
+    "terminal.integrated.gpuAcceleration": "on",
     "terminal.integrated.defaultProfile.windows": "PowerShell",
 
-    // Plugins
-    // -- fileNesting
-    "explorer.fileNesting.enabled": true,
+
+    // -------------------------------------
+    // Audio Cue Settings
+    // Settings related to audio feedback for certain actions in VSCode.
+    // -------------------------------------
+
+    // General
+    "audioCues.save": "always",
+    "audioCues.clear": "on",
+    "audioCues.format": "always",
+
+
+    // -------------------------------------
+    // LSP Plugin Settings
+    // Specifically refers to programming language related plug-ins LSP configurations, etc.
+    // -------------------------------------
+
+    // Python
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.inlayHints.callArgumentNames": "all",
+    "python.analysis.inlayHints.functionReturnTypes": true,
+
+
+    // -------------------------------------
+    // Plugin Settings
+    // Settings related to installed plug-ins
+    // -------------------------------------
+
+    // jock.svg
+    "svg.preview.mode": "svg",
+
+    // antfu.file-nesting
     "explorer.fileNesting.expand": false,
+    "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.patterns": {
         "//": "Last update at 11/2/2023, 5:11:41 AM",
         "*.asax": "$(capture).*.cs, $(capture).*.vb",
@@ -119,27 +185,4 @@
         "vite.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
         "vue.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*"
     },
-    // -- ruff
-    // TODO
-    // -- svg
-    "svg.preview.mode": "svg",
-
-    // LSP
-    // -- Python
-    // ---- Editor
-    "[python]": {
-        "editor.formatOnType": true,
-        "editor.defaultFormatter": "charliermarsh.ruff"
-    },
-    // ---- Type Checking
-    "python.analysis.typeCheckingMode": "basic",
-    // ---- Inlay Hints
-    "python.analysis.inlayHints.variableTypes": true,
-    "python.analysis.inlayHints.callArgumentNames": "all",
-    "python.analysis.inlayHints.functionReturnTypes": true,
-
-    // Uncategorized
-    "audioCues.clear": "on",
-    "audioCues.save": "always",
-    "audioCues.format": "always",
 }
