@@ -4,10 +4,10 @@ Rainzee's VS Code settings, carefully curated for python development. A Minimali
 
 ### Screenshots
 
-(./screenshots/1.png)
-(./screenshots/2.png)
-(./screenshots/3.png)
-(./screenshots/4.png)
+![screenshot](./screenshots/1.png)
+![screenshot](./screenshots/2.png)
+![screenshot](./screenshots/3.png)
+![screenshot](./screenshots/4.png)
 
 ### 🎨 Theme
 
