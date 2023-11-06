@@ -21,8 +21,9 @@
     // -------------------------------------
 
     // Themes
-    "workbench.iconTheme": "file-icons",
     "workbench.colorTheme": "Moegi Dark Vitesse",
+    "workbench.iconTheme": "file-icons",
+    "workbench.productIconTheme": "fluent-icons",
 
     // Customization
     "workbench.colorCustomizations": {
