@@ -32,6 +32,7 @@
     },
 
     // General
+    "workbench.tree.indent": 16,
     "workbench.startupEditor": "none",
     "workbench.editor.showTabs": "single",
     "workbench.activityBar.location": "top",
@@ -46,9 +47,12 @@
 
     // Font
     "editor.fontSize": 16,
+    "editor.suggestFontSize": 14,
+    "editor.codeLensFontSize": 14,
     "editor.fontLigatures": true,
     "editor.fontVariations": true,
     "editor.fontFamily": "'Cascadia Code', 'OPlusSans 3.0', 'Segoe UI Emoji'",
+    "editor.codeLensFontFamily": "'Cascadia Code', 'OPlusSans 3.0', 'Segoe UI Emoji'",
 
     // General
     "editor.cursorBlinking": "smooth",
@@ -68,6 +72,10 @@
     // Terminal Settings
     // These settings are specific to the integrated terminal in VSCode.
     // -------------------------------------
+
+    // Font
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "'CaskaydiaCove Nerd Font Propo', 'OPlusSans 3.0', 'Segoe UI Emoji'",
 
     // General
     "terminal.integrated.cursorStyle": "line",
@@ -104,6 +112,11 @@
     // Settings related to installed plug-ins
     // -------------------------------------
 
+    // usernamehw.errorlens
+    "errorLens.fontSize": "16",
+    "errorLens.fontStyleItalic": true,
+    "errorLens.fontFamily": "'Cascadia Code', 'OPlusSans 3.0', 'Segoe UI Emoji'",
+
     // jock.svg
     "svg.preview.mode": "svg",
 
@@ -111,7 +124,7 @@
     "explorer.fileNesting.expand": false,
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.patterns": {
-        "//": "Last update at 11/2/2023, 5:11:41 AM",
+        "//": "Last update at 11/8/2023, 3:16:45 PM",
         "*.asax": "$(capture).*.cs, $(capture).*.vb",
         "*.ascx": "$(capture).*.cs, $(capture).*.vb",
         "*.ashx": "$(capture).*.cs, $(capture).*.vb",
@@ -186,5 +199,14 @@
         "svelte.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, houdini.config.*, htmlnanorc.*, i18n.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, mdsvex.config.js, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vite.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
         "vite.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
         "vue.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*"
-    }
+    },
+
+
+    // -------------------------------------
+    // Sundry Settings
+    // Fragmented and unorganized settings
+    // -------------------------------------
+    
+    "scm.inputFontSize": 14,
+    "diffEditor.codeLens": true
 }
