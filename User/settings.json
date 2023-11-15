@@ -55,6 +55,7 @@
     "editor.codeLensFontFamily": "'Cascadia Code', 'OPlusSans 3.0', 'Segoe UI Emoji'",
 
     // General
+    "editor.lineNumbers": "relative",
     "editor.cursorBlinking": "smooth",
     "editor.smoothScrolling": true,
     "editor.minimap.enabled": false,
