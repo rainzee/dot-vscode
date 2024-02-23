@@ -1,28 +1,52 @@
-// 将键绑定放在此文件中以覆盖默认值auto[]
 [
     {
-        "key": "ctrl+h",
-        "command": "deleteLeft",
+        "key": "alt+j",
+        "command": "cursorDown",
         "when": "textInputFocus"
     },
     {
-        "key": "backspace",
-        "command": "-deleteLeft",
+        "key": "alt+k",
+        "command": "cursorUp",
         "when": "textInputFocus"
     },
     {
-        "key": "shift+backspace",
-        "command": "-deleteLeft",
+        "key": "alt+h",
+        "command": "cursorLeft",
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+h",
-        "command": "-editor.action.startFindReplaceAction",
-        "when": "editorFocus || editorIsOpen"
+        "key": "alt+l",
+        "command": "cursorRight",
+        "when": "textInputFocus"
     },
     {
-        "key": "backspace",
-        "command": "deleteLeft",
-        "when": "textInputFocus"
-    }
+        "key": "alt+j",
+        "command": "selectNextSuggestion",
+        "when": "textInputFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+        "key": "alt+k",
+        "command": "selectPrevSuggestion",
+        "when": "textInputFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+        "key": "alt+h",
+        "command": "cursorHome",
+        "when": "textInputFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "alt+l",
+        "command": "cursorEnd",
+        "when": "textInputFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "alt+j",
+        "command": "cursorBottom",
+        "when": "textInputFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "alt+k",
+        "command": "cursorTop",
+        "when": "textInputFocus && vim.mode == 'Normal'"
+    },
 ]
